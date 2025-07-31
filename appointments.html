@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Appointments - Naija Chic</title>
+    <link rel="stylesheet" href="css/styles.css">
+    <script src="js/script.js" defer></script>
+</head>
+<body>
+    <!-- Marquee -->
+    <marquee behavior="scroll" direction="left">Book your fashion consultation now with Naija Chic!</marquee>
+
+    <!-- Navigation Bar -->
+    <nav>
+        <ul>
+            <li><a href="index.html">Home</a></li>
+            <li><a href="products.html">Products</a></li>
+            <li><a href="trustees.html">Board of Trustees</a></li>
+            <li><a href="appointments.html">Appointments</a></li>
+            <li><a href="events.html">Events</a></li>
+        </ul>
+    </nav>
+
+    <!-- Appointment Form -->
+    <header>
+        <h1>Book an Appointment</h1>
+        <p>We’re excited to meet you. Schedule your visit with our team.</p>
+    </header>
+
+    <section class="appointment-form">
+        <form action="#" method="post" onsubmit="return validateForm()">
+            <label for="name">Full Name:</label>
+            <input type="text" id="name" name="name" required>
+
+            <label for="email">Email:</label>
+            <input type="email" id="email" name="email" required>
+
+            <label for="phone">Phone Number:</label>
+            <input type="tel" id="phone" name="phone" required>
+
+            <label for="date">Preferred Date:</label>
+            <input type="date" id="date" name="date" required>
+
+            <label for="message">Inquiry/Message:</label>
+            <textarea id="message" name="message" rows="4" placeholder="Let us know what you'd like..." required></textarea>
+
+            <button type="submit">Submit Appointment</button>
+        </form>
+    </section>
+
+    <footer>
+        <p>&copy; 2025 Naija Chic. All rights reserved.</p>
+    </footer>
+</body>
+</html>
